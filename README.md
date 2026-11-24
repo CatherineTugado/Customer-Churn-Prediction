@@ -60,28 +60,6 @@ The threshold was chosen with out-of-fold predictions on the training set, so th
 └── requirements.txt
 ```
 
-## How to run
-
-```bash
-git clone https://github.com/CatherineTugado/customer-churn-prediction.git
-cd customer-churn-prediction
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-
-# Train and save the final model (prints test metrics)
-PYTHONPATH=src python -m churn.train
-
-# Run tests
-PYTHONPATH=src pytest -q
-
-# Explore the analysis
-jupyter notebook notebooks/01_churn_analysis.ipynb
-```
-
 ## Data
 
 [IBM Telco Customer Churn sample dataset](https://github.com/IBM/telco-customer-churn-on-icp4d) with 7,043 customers and 21 attributes (demographics, services, contract, billing, churn label).
-
-## About me
-
-I'm Catherine Tugado, a data scientist with a physics background. I build forecasting, NLP and customer analytics models for retail and energy businesses. [LinkedIn](https://linkedin.com/in/catherinetugado)
